@@ -9,6 +9,23 @@
 # Sum of all numbers is 45.
 # End Program !!!
 
+# print('Using "break" ...')
+
+# total = 0 
+# i = 1    
+
+# while i <= 50:
+#     if i % 3 == 0:
+#         if total + i > 50:
+#             break
+#         print(i, end=" ")
+#         total += i
+#     i += 1
+
+# print(f"\nSum of all numbers is {total}.")
+# print("End Program !!!")
+
+
 # =================================================================================
 
 
@@ -24,6 +41,20 @@
 # Number 6: 6
 # Sum of all positive numbers is 16.
 
+# print("Using while loop to add only positive number from 6 input...")
+
+# count = 1
+# total = 0
+
+# while count <= 6:
+#     num = int(input(f"Number {count}: "))
+#     if num >= 0:
+#         total += num
+#     count += 1
+
+# print(f"Sum of all positive numbers is {total}.")
+
+
 # =================================================================================
 
 
@@ -34,6 +65,17 @@
 # Using "pass", if the number is odd and greater than 5
 # 1 2 3 4 5 6 8
 # End Program !!!
+
+# print("Printing 1 to 9 using for loop ...")
+# print('Using "pass", if the number is odd and greater than 5')
+
+# for i in range(1, 10):
+#     if i > 5 and i % 2 == 1:
+#         pass  
+#     else:
+#         print(i, end=" ")
+# print("\nEnd Program !!!")
+
 
 # =================================================================================
 
@@ -51,6 +93,19 @@
 # a ==> 97                    e ==> 101
 # e ==> 101                   Sum of all ascii values = 384
 # Sum of all ascii values = 475
+
+# st = input("Enter a string: ")
+# print("Output ...")
+# vowels = "aeiouAEIOU"
+# total_ascii = 0
+
+# for ch in st:
+#     if ch in vowels:
+#         ascii_value = ord(ch)
+#         print(f"{ch} ==> {ascii_value}")
+#         total_ascii += ascii_value
+# print(f"Sum of all ascii values = {total_ascii}")
+
 
 # =================================================================================
 
@@ -74,4 +129,20 @@
 # Donation amount (1-1000): 500
 # Total donation = 1300
 # There are 3 donators.
+
+total_donation = 0
+donator_count = 0
+
+while total_donation <= 1000:
+    amount = int(input("Donation amount (1-1000): "))
+    
+    if amount < 1 or amount > 1000:
+        print("Invalid Amount!")
+        continue
+    
+    total_donation += amount
+    donator_count += 1
+    print(f"Total donation = {total_donation}")
+
+print(f"There are {donator_count} donators.")
 

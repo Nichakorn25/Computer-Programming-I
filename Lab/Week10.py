@@ -7,6 +7,16 @@
 # 1, 2, 3, 4, 5, 6, 7, 8 and 9.
 # End Program !!!
 
+# print("Printing 1 to 9 using for loop ...")
+
+# for i in range(1, 10):
+#     if i < 9:
+#         print(i, end=", ")
+#     else:
+#         print("and", i + ".", sep=" ")
+# print("End Program !!!")
+
+
 # =================================================================================
 
 # 10.2 เขียนโปรแกรมโดยใช้ลูป while ในการวนลูปรับเลขจ านวน
@@ -22,6 +32,21 @@
 # Enter a number (1-10): 8
 # 7 5 3 1
 # Sum = 16
+
+# print("Using while loop ...")
+# num = 0
+# while num < 1 or num > 10:
+#     num = int(input("Enter a number (1-10): "))
+
+# i = num
+# total = 0
+# while i >= 1:
+#     if i % 2 == 1:
+#         print(i, end=" ")
+#         total += i
+#     i -= 1
+# print(f"\nSum = {total}")
+
 
 # =================================================================================
 
@@ -53,6 +78,35 @@
 # -----------------------
 # a = 6, b = 9 and c = 3
 
+# # รับค่า a
+# while True:
+#     a = int(input("Enter number 1 (1-9): "))
+#     if 1 <= a <= 9:
+#         break
+# print("-----------------------")
+
+# # รับค่า b
+# while True:
+#     b = int(input("Enter number 2 (1-9): "))
+#     if b == a:
+#         print(f"{b} is the same as the first number.")
+#     elif 1 <= b <= 9:
+#         break
+# print("-----------------------")
+
+# # รับค่า c
+# while True:
+#     c = int(input("Enter number 3 (1-9): "))
+#     if c == a:
+#         print(f"{c} is the same as the first number.")
+#     elif c == b:
+#         print(f"{c} is the same as the second number.")
+#     elif 1 <= c <= 9:
+#         break
+# print("-----------------------")
+# print(f"a = {a}, b = {b} and c = {c}")
+
+
 # =================================================================================
 
 # extra จากคลิปที่ผ่านมานั้น (คลิป ปัญหาพิเศษ การใช้ลูป while) เมื่อได้เลขจ านวนเต็ม
@@ -65,3 +119,55 @@
 # min = 3
 # max = 9
 # Printing from 3 to 9: 3 4 5 6 7 8 9
+
+# รับ a
+while True:
+    a = int(input("Enter number 1 (1-9): "))
+    if 1 <= a <= 9:
+        break
+print("-----------------------")
+
+# รับ b
+while True:
+    b = int(input("Enter number 2 (1-9): "))
+    if b == a:
+        print(f"{b} is the same as the first number.")
+    elif 1 <= b <= 9:
+        break
+print("-----------------------")
+
+# รับ c
+while True:
+    c = int(input("Enter number 3 (1-9): "))
+    if c == a:
+        print(f"{c} is the same as the first number.")
+    elif c == b:
+        print(f"{c} is the same as the second number.")
+    elif 1 <= c <= 9:
+        break
+print("-----------------------")
+
+print(f"a = {a}, b = {b} and c = {c}")
+
+# หาค่าต่ำสุด
+if a <= b and a <= c:
+    min_val = a
+elif b <= a and b <= c:
+    min_val = b
+else:
+    min_val = c
+
+# หาค่าสูงสุด
+if a >= b and a >= c:
+    max_val = a
+elif b >= a and b >= c:
+    max_val = b
+else:
+    max_val = c
+
+print(f"min = {min_val}")
+print(f"max = {max_val}")
+print(f"Printing from {min_val} to {max_val}:", end=" ")
+for i in range(min_val, max_val + 1):
+    print(i, end=" ")
+

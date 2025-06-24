@@ -8,6 +8,20 @@
 # 123 is separated to 1, 2 and 3.
 # Sum of 1, 2 and 3 is 6.
 
+# number = int(input("Enter a number 100-999: "))
+
+# if 100 <= number <= 999:
+#     hundreds = number // 100
+#     tens = (number % 100) // 10
+#     units = number % 10
+
+#     total = hundreds + tens + units
+
+#     print(f"{number} is separated to {hundreds}, {tens} and {units}.")
+#     print(f"Sum of {hundreds}, {tens} and {units} is {total}.")
+# else:
+#     print("Invalid input. Please enter a number between 100 and 999.")
+
 # =================================================================================
 
 
@@ -21,6 +35,19 @@
 # 5>4 ==> True
 # 9 is an odd number ==> True
 # 5>4 and 5 is an even number ==> False
+
+# a = int(input("a = "))
+# b = int(input("b = "))
+# c = int(input("c = "))
+
+# print(f"a = {a}, b = {b} and c = {c}")
+
+# print(f"{a}>{b} ==> {a > b}")
+
+# print(f"{c} is an odd number ==> {c % 2 == 1}")
+
+# print(f"{a}>{b} and {a} is an even number ==> {a > b and a % 2 == 0}")
+
 
 # =================================================================================
 
@@ -37,3 +64,8 @@
 # ตัวอย่างการรันโปรแกรม ตัวอย่างการรันโปรแกรม
 # Enter a string: study Enter a string: bcdxyz
 # "study" contains vowel ==> True "bcdxyz" contains vowel ==> False
+
+str_input = input("Enter a string: ")
+vowels = "aeiou"
+contains_vowel = any(char in vowels for char in str_input)
+print(f'"{str_input}" contains vowel ==> {contains_vowel}')

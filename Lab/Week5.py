@@ -99,3 +99,17 @@
 # Requested space for height: 10
 # 123456789012345678901234567890
 # Sumate 20 178
+
+print("Display data as your request")
+
+name = input("Enter name: ")
+age = input("Enter age: ")
+height = input("Enter height: ")
+
+print(f"Your name: {name}")
+print(f"Your age: {age}")
+print(f"Your height: {height}")
+
+print("1234567890" * 3) 
+
+print(f"{name:<10}{age:<10}{height:<10}")
