@@ -6,6 +6,14 @@
 #  97    61   141     a 
 #  98    62   142     b
 
+
 print("Dec   Hex   Oct   Chr")
-for i in range(97, 123): 
-    print(f"{i:>3}   {i:>3x}   {i:>3o}    {chr(i):>2}")
+
+for i in range(97, 123):
+    decimal = i                  # ค่าเลขฐานสิบ
+    hexa = format(i, 'x')        # แปลงเป็นเลขฐานสิบหก 
+    octal = format(i, 'o')       # แปลงเป็นเลขฐานแปด
+    character = chr(i)           # แปลงเป็นตัวอักษร
+    
+    print("{:>3}   {:>3}   {:>3}    {}".format(decimal, hexa, octal, character))
+
